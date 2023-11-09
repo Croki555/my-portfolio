@@ -3,12 +3,22 @@
     --bs-blue-dark: #111827;
 }
 
+section {
+    padding-top: 96px!important;
+    padding-bottom: 96px!important;
+}
+
 .bg-dark {
     background-color: var(--bs-dark)!important;
 }
 
 .bg-blue-dark {
     background-color: var(--bs-blue-dark);
+}
+
+.text-bg-dark {
+    color: #fff!important;
+    background-color: var(--bs-blue-dark)!important;
 }
 
 .bg-gray-light {
@@ -89,6 +99,10 @@ h3 {
     }
     /* end Заголовки */
 
+    section {
+        padding-top: 64px!important;
+        padding-bottom: 64px!important;
+    }
     #work img {
         max-height: 250px;
     }

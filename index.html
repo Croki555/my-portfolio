@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body data-bs-spy="scroll" data-bs-target="#navbar-example2" tabindex="0">
+<body>
 <header class="sticky-top">
     <nav id="navbar-example2" class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container-xxl justify-content-end">
@@ -21,23 +21,23 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav nav-pills align-items-end mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link py-3 px-md-4 py-md-2" href="#about">Обо мне</a>
+                        <a class="nav-link py-3 px-md-4 py-md-2 toAnchor" href="#about">Обо мне</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link py-3 px-md-4 py-md-2" href="#skills">Скиллы</a>
+                        <a class="nav-link py-3 px-md-4 py-md-2 toAnchor" href="#skills">Скиллы</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link py-3 px-md-4 py-md-2" href="#work">Мои работы</a>
+                        <a class="nav-link py-3 px-md-4 py-md-2 toAnchor" href="#work">Мои работы</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link py-3 px-md-4 py-md-2" href="#">Контакты</a>
+                        <a class="nav-link py-3 px-md-4 py-md-2 toAnchor" href="#">Контакты</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 </header>
-<section class="py-4 py-md-5 bg-dark" id="hero">
+<section class="py-md-5 bg-dark" id="hero">
     <div class="container-xxl">
         <div class="row align-items-center">
             <div class="col-md-8">
@@ -57,7 +57,7 @@
         </div>
     </div>
 </section>
-<section class="py-4 py-md-5 bg-blue-dark" id="about">
+<section class="py-md-5 bg-blue-dark" id="about">
     <div class="container-xxl">
         <div class="mb-3 mb-md-5 text-center">
             <button class="btn btn-sm btn-primary user-select-none">Обо мне</button>
@@ -86,7 +86,7 @@
         </div>
     </div>
 </section>
-<section class="py-4 py-md-5 bg-dark" id="skills">
+<section class="py-md-5 bg-dark" id="skills">
     <div class="container-xxl">
         <div class="mb-3 mb-md-5 text-center">
             <button class="btn btn-sm btn-primary">Мои навыки</button>
@@ -191,7 +191,7 @@
         </div>
     </div>
 </section>
-<section class="py-4 py-md-5 bg-blue-dark" id="work">
+<section class="py-md-5 bg-blue-dark" id="work">
     <div class="container-xxl">
         <div class="mb-3 mb-md-5 text-center">
             <button class="btn btn-sm btn-primary">Проекты</button>
@@ -256,5 +256,19 @@
     </div>
 </section>
 <script src="./js/bootstrap.js"></script>
+<script src="./js/jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function () {
+        let navMain = $(".navbar-collapse");
+        if($(window).width() <= 767){
+            $('.toAnchor').on('click', function () {
+                $a = $($(this).attr('href'));
+                $('html,body').animate({ scrollTop: $a.offset().top - 250}, 500);
+                navMain.collapse('hide');
+                return false;
+            });
+        }
+    })
+</script>
 </body>
 </html>
