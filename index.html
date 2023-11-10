@@ -8,6 +8,7 @@
     <title>Моё портфолио</title>
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/6cb8a95bb2.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <header class="sticky-top">
@@ -60,14 +61,14 @@
 <section class="py-md-5 bg-blue-dark" id="about">
     <div class="container-xxl">
         <div class="mb-3 mb-md-5 text-center">
-            <button class="btn btn-sm btn-primary user-select-none">Обо мне</button>
+            <button class="btn btn-sm btn-dark user-select-none">Обо мне</button>
         </div>
         <div class="row align-items-start">
             <div class="col-md-6 mb-3 mb-md-0 d-flex justify-content-center justify-content-md-start">
                 <img src="./images/holiday-on-the-island.jpg" class="img-thumbnail" alt="Моя фотография на паспорт">
             </div>
             <div class="col-md-6">
-                <h2 class="mb-4 text-white">Интересно обо мне? Вот оно:</h2>
+                <h2 class="mb-4 text-white">Интересно обо мне?</h2>
                 <p class="text-secondary m-0">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam doloribus reiciendis
                     sequi voluptatem. Adipisci autem sequi unde? Accusamus aperiam blanditiis dolor eaque illo impedit
@@ -89,104 +90,56 @@
 <section class="py-md-5 bg-dark" id="skills">
     <div class="container-xxl">
         <div class="mb-3 mb-md-5 text-center">
-            <button class="btn btn-sm btn-primary">Мои навыки</button>
+            <button class="btn btn-sm btn-dark">Мои навыки</button>
         </div>
-        <div class="row row-cols-sm-3 row-cols-md-8">
-            <div class="col p-2 d-flex flex-column align-items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
-                    <path d="M0 64V0H64V64H0Z" fill="#FFD600"/>
-                    <path d="M41.8451 47.9058C43.0753 49.904 44.4122 51.8187 47.2442 51.8187C49.6229 51.8187 50.8709 50.6365 50.8709 49.0009C50.8709 47.0436 49.5802 46.3485 46.9634 45.2089L45.5287 44.5973C41.3882 42.8409 38.6345 40.64 38.6345 35.9911C38.6345 31.7067 41.9145 28.4462 47.0398 28.4462C50.6896 28.4462 53.3118 29.7102 55.2033 33.0205L50.734 35.8773C49.7509 34.1209 48.6878 33.4293 47.0398 33.4293C45.358 33.4293 44.2931 34.4907 44.2931 35.8773C44.2931 37.5911 45.3598 38.2845 47.822 39.3458L49.2567 39.9573C54.1367 42.0356 56.8887 44.1582 56.8887 48.9298C56.8887 54.0711 52.8282 56.8889 47.3776 56.8889C42.046 56.8889 39.0185 54.2133 37.3331 50.9013L41.8451 47.9058ZM21.2478 48.0516C22.1474 49.6622 23.5145 50.9013 25.4807 50.9013C27.3616 50.9013 28.4442 50.1582 28.4442 47.2693V28.4445H34.3696V48.1796C34.3696 54.1653 30.8976 56.8889 25.8274 56.8889C21.246 56.8889 17.9394 53.7849 16.5918 50.9013L21.2478 48.0516Z"
-                          fill="#000001"/>
-                </svg>
-                <a href="#" class="#">Javascript</a>
+        <div class="skills-list">
+            <div class="p-2 d-inline-flex flex-column align-items-center position-relative">
+                <img class="mb-2 skills-icon" src="./images/icons/html5-icon.svg" alt="HTML5 icon">
+                <a href="https://htmlbook.ru/html5" target="_blank" class="skills-title stretched-link">HTML5</a>
             </div>
-            <div class="col p-2 d-flex flex-column align-items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
-                    <path d="M0 64V0H64V64H0Z" fill="#FFD600"/>
-                    <path d="M41.8451 47.9058C43.0753 49.904 44.4122 51.8187 47.2442 51.8187C49.6229 51.8187 50.8709 50.6365 50.8709 49.0009C50.8709 47.0436 49.5802 46.3485 46.9634 45.2089L45.5287 44.5973C41.3882 42.8409 38.6345 40.64 38.6345 35.9911C38.6345 31.7067 41.9145 28.4462 47.0398 28.4462C50.6896 28.4462 53.3118 29.7102 55.2033 33.0205L50.734 35.8773C49.7509 34.1209 48.6878 33.4293 47.0398 33.4293C45.358 33.4293 44.2931 34.4907 44.2931 35.8773C44.2931 37.5911 45.3598 38.2845 47.822 39.3458L49.2567 39.9573C54.1367 42.0356 56.8887 44.1582 56.8887 48.9298C56.8887 54.0711 52.8282 56.8889 47.3776 56.8889C42.046 56.8889 39.0185 54.2133 37.3331 50.9013L41.8451 47.9058ZM21.2478 48.0516C22.1474 49.6622 23.5145 50.9013 25.4807 50.9013C27.3616 50.9013 28.4442 50.1582 28.4442 47.2693V28.4445H34.3696V48.1796C34.3696 54.1653 30.8976 56.8889 25.8274 56.8889C21.246 56.8889 17.9394 53.7849 16.5918 50.9013L21.2478 48.0516Z"
-                          fill="#000001"/>
-                </svg>
-                <a href="#" class="#">Javascript</a>
+            <div class="p-2 d-inline-flex flex-column align-items-center position-relative">
+                <img class="mb-2 skills-icon" src="./images/icons/css3-icon.svg" alt="CSS3 icon">
+                <a href="https://htmlbook.ru/css3" target="_blank" class="skills-title stretched-link">CSS3</a>
             </div>
-            <div class="col p-2 d-flex flex-column align-items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
-                    <path d="M0 64V0H64V64H0Z" fill="#FFD600"/>
-                    <path d="M41.8451 47.9058C43.0753 49.904 44.4122 51.8187 47.2442 51.8187C49.6229 51.8187 50.8709 50.6365 50.8709 49.0009C50.8709 47.0436 49.5802 46.3485 46.9634 45.2089L45.5287 44.5973C41.3882 42.8409 38.6345 40.64 38.6345 35.9911C38.6345 31.7067 41.9145 28.4462 47.0398 28.4462C50.6896 28.4462 53.3118 29.7102 55.2033 33.0205L50.734 35.8773C49.7509 34.1209 48.6878 33.4293 47.0398 33.4293C45.358 33.4293 44.2931 34.4907 44.2931 35.8773C44.2931 37.5911 45.3598 38.2845 47.822 39.3458L49.2567 39.9573C54.1367 42.0356 56.8887 44.1582 56.8887 48.9298C56.8887 54.0711 52.8282 56.8889 47.3776 56.8889C42.046 56.8889 39.0185 54.2133 37.3331 50.9013L41.8451 47.9058ZM21.2478 48.0516C22.1474 49.6622 23.5145 50.9013 25.4807 50.9013C27.3616 50.9013 28.4442 50.1582 28.4442 47.2693V28.4445H34.3696V48.1796C34.3696 54.1653 30.8976 56.8889 25.8274 56.8889C21.246 56.8889 17.9394 53.7849 16.5918 50.9013L21.2478 48.0516Z"
-                          fill="#000001"/>
-                </svg>
-                <a href="#" class="#">Javascript</a>
+            <div class="p-2 d-inline-flex flex-column align-items-center position-relative">
+                <img class="mb-2 skills-icon" src="./images/icons/bootstrap-icon.svg" alt="Bootstrap icon">
+                <a href="https://getbootstrap.com/" target="_blank" class="skills-title stretched-link">Bootstrap</a>
             </div>
-            <div class="col p-2 d-flex flex-column align-items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
-                    <path d="M0 64V0H64V64H0Z" fill="#FFD600"/>
-                    <path d="M41.8451 47.9058C43.0753 49.904 44.4122 51.8187 47.2442 51.8187C49.6229 51.8187 50.8709 50.6365 50.8709 49.0009C50.8709 47.0436 49.5802 46.3485 46.9634 45.2089L45.5287 44.5973C41.3882 42.8409 38.6345 40.64 38.6345 35.9911C38.6345 31.7067 41.9145 28.4462 47.0398 28.4462C50.6896 28.4462 53.3118 29.7102 55.2033 33.0205L50.734 35.8773C49.7509 34.1209 48.6878 33.4293 47.0398 33.4293C45.358 33.4293 44.2931 34.4907 44.2931 35.8773C44.2931 37.5911 45.3598 38.2845 47.822 39.3458L49.2567 39.9573C54.1367 42.0356 56.8887 44.1582 56.8887 48.9298C56.8887 54.0711 52.8282 56.8889 47.3776 56.8889C42.046 56.8889 39.0185 54.2133 37.3331 50.9013L41.8451 47.9058ZM21.2478 48.0516C22.1474 49.6622 23.5145 50.9013 25.4807 50.9013C27.3616 50.9013 28.4442 50.1582 28.4442 47.2693V28.4445H34.3696V48.1796C34.3696 54.1653 30.8976 56.8889 25.8274 56.8889C21.246 56.8889 17.9394 53.7849 16.5918 50.9013L21.2478 48.0516Z"
-                          fill="#000001"/>
-                </svg>
-                <a href="#" class="#">Javascript</a>
+            <div class="p-2 d-inline-flex flex-column align-items-center position-relative">
+                <img class="mb-2 skills-icon" src="./images/icons/figma-icon.svg" alt="Figma icon">
+                <a href="https://www.figma.com/" target="_blank" class="skills-title stretched-link">Figma</a>
             </div>
-            <div class="col p-2 d-flex flex-column align-items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
-                    <path d="M0 64V0H64V64H0Z" fill="#FFD600"/>
-                    <path d="M41.8451 47.9058C43.0753 49.904 44.4122 51.8187 47.2442 51.8187C49.6229 51.8187 50.8709 50.6365 50.8709 49.0009C50.8709 47.0436 49.5802 46.3485 46.9634 45.2089L45.5287 44.5973C41.3882 42.8409 38.6345 40.64 38.6345 35.9911C38.6345 31.7067 41.9145 28.4462 47.0398 28.4462C50.6896 28.4462 53.3118 29.7102 55.2033 33.0205L50.734 35.8773C49.7509 34.1209 48.6878 33.4293 47.0398 33.4293C45.358 33.4293 44.2931 34.4907 44.2931 35.8773C44.2931 37.5911 45.3598 38.2845 47.822 39.3458L49.2567 39.9573C54.1367 42.0356 56.8887 44.1582 56.8887 48.9298C56.8887 54.0711 52.8282 56.8889 47.3776 56.8889C42.046 56.8889 39.0185 54.2133 37.3331 50.9013L41.8451 47.9058ZM21.2478 48.0516C22.1474 49.6622 23.5145 50.9013 25.4807 50.9013C27.3616 50.9013 28.4442 50.1582 28.4442 47.2693V28.4445H34.3696V48.1796C34.3696 54.1653 30.8976 56.8889 25.8274 56.8889C21.246 56.8889 17.9394 53.7849 16.5918 50.9013L21.2478 48.0516Z"
-                          fill="#000001"/>
-                </svg>
-                <a href="#" class="#">Javascript</a>
+            <div class="p-2 d-inline-flex flex-column align-items-center position-relative">
+                <img class="mb-2 skills-icon" src="./images/icons/gitlab-icon.svg" alt="GitLab icon">
+                <a href="https://about.gitlab.com/" target="_blank" class="skills-title stretched-link">GitLab</a>
             </div>
-            <div class="col p-2 d-flex flex-column align-items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
-                    <path d="M0 64V0H64V64H0Z" fill="#FFD600"/>
-                    <path d="M41.8451 47.9058C43.0753 49.904 44.4122 51.8187 47.2442 51.8187C49.6229 51.8187 50.8709 50.6365 50.8709 49.0009C50.8709 47.0436 49.5802 46.3485 46.9634 45.2089L45.5287 44.5973C41.3882 42.8409 38.6345 40.64 38.6345 35.9911C38.6345 31.7067 41.9145 28.4462 47.0398 28.4462C50.6896 28.4462 53.3118 29.7102 55.2033 33.0205L50.734 35.8773C49.7509 34.1209 48.6878 33.4293 47.0398 33.4293C45.358 33.4293 44.2931 34.4907 44.2931 35.8773C44.2931 37.5911 45.3598 38.2845 47.822 39.3458L49.2567 39.9573C54.1367 42.0356 56.8887 44.1582 56.8887 48.9298C56.8887 54.0711 52.8282 56.8889 47.3776 56.8889C42.046 56.8889 39.0185 54.2133 37.3331 50.9013L41.8451 47.9058ZM21.2478 48.0516C22.1474 49.6622 23.5145 50.9013 25.4807 50.9013C27.3616 50.9013 28.4442 50.1582 28.4442 47.2693V28.4445H34.3696V48.1796C34.3696 54.1653 30.8976 56.8889 25.8274 56.8889C21.246 56.8889 17.9394 53.7849 16.5918 50.9013L21.2478 48.0516Z"
-                          fill="#000001"/>
-                </svg>
-                <a href="#" class="#">Javascript</a>
+            <div class="p-2 d-inline-flex flex-column align-items-center position-relative">
+                <img class="mb-2 skills-icon" src="./images/icons/javascript-icon.svg" alt="JavaScript icon">
+                <a href="https://learn.javascript.ru/" target="_blank" class="skills-title stretched-link">JavaScript</a>
             </div>
-            <div class="col p-2 d-flex flex-column align-items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
-                    <path d="M0 64V0H64V64H0Z" fill="#FFD600"/>
-                    <path d="M41.8451 47.9058C43.0753 49.904 44.4122 51.8187 47.2442 51.8187C49.6229 51.8187 50.8709 50.6365 50.8709 49.0009C50.8709 47.0436 49.5802 46.3485 46.9634 45.2089L45.5287 44.5973C41.3882 42.8409 38.6345 40.64 38.6345 35.9911C38.6345 31.7067 41.9145 28.4462 47.0398 28.4462C50.6896 28.4462 53.3118 29.7102 55.2033 33.0205L50.734 35.8773C49.7509 34.1209 48.6878 33.4293 47.0398 33.4293C45.358 33.4293 44.2931 34.4907 44.2931 35.8773C44.2931 37.5911 45.3598 38.2845 47.822 39.3458L49.2567 39.9573C54.1367 42.0356 56.8887 44.1582 56.8887 48.9298C56.8887 54.0711 52.8282 56.8889 47.3776 56.8889C42.046 56.8889 39.0185 54.2133 37.3331 50.9013L41.8451 47.9058ZM21.2478 48.0516C22.1474 49.6622 23.5145 50.9013 25.4807 50.9013C27.3616 50.9013 28.4442 50.1582 28.4442 47.2693V28.4445H34.3696V48.1796C34.3696 54.1653 30.8976 56.8889 25.8274 56.8889C21.246 56.8889 17.9394 53.7849 16.5918 50.9013L21.2478 48.0516Z"
-                          fill="#000001"/>
-                </svg>
-                <a href="#" class="#">Javascript</a>
+            <div class="p-2 d-inline-flex flex-column align-items-center position-relative">
+                <img class="mb-2 skills-icon" src="./images/icons/jquery-icon.svg" alt="Jquery icon">
+                <a href="https://jquery.com/" target="_blank" class="skills-title stretched-link">Jquery</a>
             </div>
-            <div class="col p-2 d-flex flex-column align-items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
-                    <path d="M0 64V0H64V64H0Z" fill="#FFD600"/>
-                    <path d="M41.8451 47.9058C43.0753 49.904 44.4122 51.8187 47.2442 51.8187C49.6229 51.8187 50.8709 50.6365 50.8709 49.0009C50.8709 47.0436 49.5802 46.3485 46.9634 45.2089L45.5287 44.5973C41.3882 42.8409 38.6345 40.64 38.6345 35.9911C38.6345 31.7067 41.9145 28.4462 47.0398 28.4462C50.6896 28.4462 53.3118 29.7102 55.2033 33.0205L50.734 35.8773C49.7509 34.1209 48.6878 33.4293 47.0398 33.4293C45.358 33.4293 44.2931 34.4907 44.2931 35.8773C44.2931 37.5911 45.3598 38.2845 47.822 39.3458L49.2567 39.9573C54.1367 42.0356 56.8887 44.1582 56.8887 48.9298C56.8887 54.0711 52.8282 56.8889 47.3776 56.8889C42.046 56.8889 39.0185 54.2133 37.3331 50.9013L41.8451 47.9058ZM21.2478 48.0516C22.1474 49.6622 23.5145 50.9013 25.4807 50.9013C27.3616 50.9013 28.4442 50.1582 28.4442 47.2693V28.4445H34.3696V48.1796C34.3696 54.1653 30.8976 56.8889 25.8274 56.8889C21.246 56.8889 17.9394 53.7849 16.5918 50.9013L21.2478 48.0516Z"
-                          fill="#000001"/>
-                </svg>
-                <a href="#" class="#">Javascript</a>
+            <div class="p-2 d-inline-flex flex-column align-items-center position-relative">
+                <img class="mb-2 skills-icon" src="./images/icons/laravel-icon.png" alt="Laravel icon">
+                <a href="https://laravel.com/" target="_blank" class="skills-title stretched-link">Laravel</a>
             </div>
-            <div class="col p-2 d-flex flex-column align-items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
-                    <path d="M0 64V0H64V64H0Z" fill="#FFD600"/>
-                    <path d="M41.8451 47.9058C43.0753 49.904 44.4122 51.8187 47.2442 51.8187C49.6229 51.8187 50.8709 50.6365 50.8709 49.0009C50.8709 47.0436 49.5802 46.3485 46.9634 45.2089L45.5287 44.5973C41.3882 42.8409 38.6345 40.64 38.6345 35.9911C38.6345 31.7067 41.9145 28.4462 47.0398 28.4462C50.6896 28.4462 53.3118 29.7102 55.2033 33.0205L50.734 35.8773C49.7509 34.1209 48.6878 33.4293 47.0398 33.4293C45.358 33.4293 44.2931 34.4907 44.2931 35.8773C44.2931 37.5911 45.3598 38.2845 47.822 39.3458L49.2567 39.9573C54.1367 42.0356 56.8887 44.1582 56.8887 48.9298C56.8887 54.0711 52.8282 56.8889 47.3776 56.8889C42.046 56.8889 39.0185 54.2133 37.3331 50.9013L41.8451 47.9058ZM21.2478 48.0516C22.1474 49.6622 23.5145 50.9013 25.4807 50.9013C27.3616 50.9013 28.4442 50.1582 28.4442 47.2693V28.4445H34.3696V48.1796C34.3696 54.1653 30.8976 56.8889 25.8274 56.8889C21.246 56.8889 17.9394 53.7849 16.5918 50.9013L21.2478 48.0516Z"
-                          fill="#000001"/>
-                </svg>
-                <a href="#" class="#">Javascript</a>
+            <div class="p-2 d-inline-flex flex-column align-items-center position-relative">
+                <img class="mb-2 skills-icon" src="./images/icons/mysql-icon.svg" alt="MySql icon">
+                <a href="https://www.mysql.com/" target="_blank" class="skills-title stretched-link">MySql</a>
             </div>
-            <div class="col p-2 d-flex flex-column align-items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
-                    <path d="M0 64V0H64V64H0Z" fill="#FFD600"/>
-                    <path d="M41.8451 47.9058C43.0753 49.904 44.4122 51.8187 47.2442 51.8187C49.6229 51.8187 50.8709 50.6365 50.8709 49.0009C50.8709 47.0436 49.5802 46.3485 46.9634 45.2089L45.5287 44.5973C41.3882 42.8409 38.6345 40.64 38.6345 35.9911C38.6345 31.7067 41.9145 28.4462 47.0398 28.4462C50.6896 28.4462 53.3118 29.7102 55.2033 33.0205L50.734 35.8773C49.7509 34.1209 48.6878 33.4293 47.0398 33.4293C45.358 33.4293 44.2931 34.4907 44.2931 35.8773C44.2931 37.5911 45.3598 38.2845 47.822 39.3458L49.2567 39.9573C54.1367 42.0356 56.8887 44.1582 56.8887 48.9298C56.8887 54.0711 52.8282 56.8889 47.3776 56.8889C42.046 56.8889 39.0185 54.2133 37.3331 50.9013L41.8451 47.9058ZM21.2478 48.0516C22.1474 49.6622 23.5145 50.9013 25.4807 50.9013C27.3616 50.9013 28.4442 50.1582 28.4442 47.2693V28.4445H34.3696V48.1796C34.3696 54.1653 30.8976 56.8889 25.8274 56.8889C21.246 56.8889 17.9394 53.7849 16.5918 50.9013L21.2478 48.0516Z"
-                          fill="#000001"/>
-                </svg>
-                <a href="#" class="#">Javascript</a>
+            <div class="p-2 d-inline-flex flex-column align-items-center position-relative">
+                <img class="mb-2 skills-icon" src="./images/icons/php-icon.svg" alt="PHP icon">
+                <a href="https://www.php.net/" target="_blank" class="skills-title stretched-link">PHP</a>
             </div>
-            <div class="col p-2 d-flex flex-column align-items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
-                    <path d="M0 64V0H64V64H0Z" fill="#FFD600"/>
-                    <path d="M41.8451 47.9058C43.0753 49.904 44.4122 51.8187 47.2442 51.8187C49.6229 51.8187 50.8709 50.6365 50.8709 49.0009C50.8709 47.0436 49.5802 46.3485 46.9634 45.2089L45.5287 44.5973C41.3882 42.8409 38.6345 40.64 38.6345 35.9911C38.6345 31.7067 41.9145 28.4462 47.0398 28.4462C50.6896 28.4462 53.3118 29.7102 55.2033 33.0205L50.734 35.8773C49.7509 34.1209 48.6878 33.4293 47.0398 33.4293C45.358 33.4293 44.2931 34.4907 44.2931 35.8773C44.2931 37.5911 45.3598 38.2845 47.822 39.3458L49.2567 39.9573C54.1367 42.0356 56.8887 44.1582 56.8887 48.9298C56.8887 54.0711 52.8282 56.8889 47.3776 56.8889C42.046 56.8889 39.0185 54.2133 37.3331 50.9013L41.8451 47.9058ZM21.2478 48.0516C22.1474 49.6622 23.5145 50.9013 25.4807 50.9013C27.3616 50.9013 28.4442 50.1582 28.4442 47.2693V28.4445H34.3696V48.1796C34.3696 54.1653 30.8976 56.8889 25.8274 56.8889C21.246 56.8889 17.9394 53.7849 16.5918 50.9013L21.2478 48.0516Z"
-                          fill="#000001"/>
-                </svg>
-                <a href="#" class="#">Javascript</a>
+            <div class="p-2 d-inline-flex flex-column align-items-center position-relative">
+                <img class="mb-2 skills-icon" src="./images/icons/postman-icon.png" alt="Postman icon">
+                <a href="https://www.postman.com/" target="_blank" class="skills-title stretched-link">Postman</a>
             </div>
-            <div class="col p-2 d-flex flex-column align-items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
-                    <path d="M0 64V0H64V64H0Z" fill="#FFD600"/>
-                    <path d="M41.8451 47.9058C43.0753 49.904 44.4122 51.8187 47.2442 51.8187C49.6229 51.8187 50.8709 50.6365 50.8709 49.0009C50.8709 47.0436 49.5802 46.3485 46.9634 45.2089L45.5287 44.5973C41.3882 42.8409 38.6345 40.64 38.6345 35.9911C38.6345 31.7067 41.9145 28.4462 47.0398 28.4462C50.6896 28.4462 53.3118 29.7102 55.2033 33.0205L50.734 35.8773C49.7509 34.1209 48.6878 33.4293 47.0398 33.4293C45.358 33.4293 44.2931 34.4907 44.2931 35.8773C44.2931 37.5911 45.3598 38.2845 47.822 39.3458L49.2567 39.9573C54.1367 42.0356 56.8887 44.1582 56.8887 48.9298C56.8887 54.0711 52.8282 56.8889 47.3776 56.8889C42.046 56.8889 39.0185 54.2133 37.3331 50.9013L41.8451 47.9058ZM21.2478 48.0516C22.1474 49.6622 23.5145 50.9013 25.4807 50.9013C27.3616 50.9013 28.4442 50.1582 28.4442 47.2693V28.4445H34.3696V48.1796C34.3696 54.1653 30.8976 56.8889 25.8274 56.8889C21.246 56.8889 17.9394 53.7849 16.5918 50.9013L21.2478 48.0516Z"
-                          fill="#000001"/>
-                </svg>
-                <a href="#" class="#">Javascript</a>
+            <div class="p-2 d-inline-flex flex-column align-items-center position-relative">
+                <img class="mb-2 skills-icon" src="./images/icons/git-icon.svg" alt="Git icon">
+                <a href="https://git-scm.com/" target="_blank" class="skills-title stretched-link">Git</a>
             </div>
         </div>
     </div>
@@ -194,13 +147,13 @@
 <section class="py-md-5 bg-blue-dark" id="work">
     <div class="container-xxl">
         <div class="mb-3 mb-md-5 text-center">
-            <button class="btn btn-sm btn-primary">Проекты</button>
+            <button class="btn btn-sm btn-dark">Проекты</button>
         </div>
         <div class="row m-0">
             <div class="card mb-3 p-0">
                 <div class="row m-0">
                     <div class="col-12 col-md-6 d-flex justify-content-center align-items-center p-3 p-md-5 bg-gray-light">
-                        <img src="./images/Picture.png" class="img-fluid rounded-start" alt="...">
+                        <img src="./images/example.png" class="img-fluid rounded-start" alt="Пример дизайн сайта">
                     </div>
                     <div class="col-12 col-md-6 text-start p-3 p-md-5 bg-gray-dark">
                         <div class="card-body">
@@ -247,7 +200,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6 d-flex justify-content-center align-items-center order-first order-md-last p-3 p-md-5 bg-gray-light">
-                        <img src="./images/Picture.png" class="img-fluid rounded-start" alt="...">
+                        <img src="./images/example.png" class="img-fluid rounded-start" alt="Пример дизайн сайта">
                     </div>
                 </div>
             </div>

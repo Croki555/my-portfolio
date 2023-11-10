@@ -28,6 +28,13 @@ section {
     background-color: #1F2937;
 }
 
+.btn-dark {
+    color: #D1D5DB;
+    font-size: 14px;
+    border-radius: 12px;
+    background-color: #374151;
+}
+
 body {
     font-size: 18px;
     line-height: 28px;
@@ -75,6 +82,22 @@ h3 {
 }
 #work img {
     max-height: 380px;
+}
+
+#skills .skills-icon {
+    width: auto;
+    height: 64px;
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    row-gap: 20px;
+}
+
+.skills-title {
+    color: #D1D5DB;
+    text-decoration: none;
 }
 
 @media (max-width: 768px)  {
