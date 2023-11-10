@@ -4,12 +4,12 @@
 }
 
 section {
-    padding-top: 96px!important;
-    padding-bottom: 96px!important;
+    padding-top: 96px !important;
+    padding-bottom: 96px !important;
 }
 
 .bg-dark {
-    background-color: var(--bs-dark)!important;
+    background-color: var(--bs-dark) !important;
 }
 
 .bg-blue-dark {
@@ -17,13 +17,14 @@ section {
 }
 
 .text-bg-dark {
-    color: #fff!important;
-    background-color: var(--bs-blue-dark)!important;
+    color: #fff !important;
+    background-color: var(--bs-blue-dark) !important;
 }
 
 .bg-gray-light {
     background-color: #374151;
 }
+
 .bg-gray-dark {
     background-color: #1F2937;
 }
@@ -59,8 +60,8 @@ h3 {
 }
 
 .btn {
-    border-radius: 12px!important;
-    padding: 4px 20px!important;
+    border-radius: 12px !important;
+    padding: 4px 20px !important;
 }
 
 /*Section Hero*/
@@ -68,6 +69,7 @@ h3 {
     max-width: 280px;
     max-height: 320px;
 }
+
 /*end Section Hero*/
 
 /*Section About*/
@@ -75,15 +77,21 @@ h3 {
     max-width: 400px;
     max-height: 480px;
 }
+
 /*end Section About*/
 
-#work .card {
-    background-color: #374151;
+/*Section Works*/
+#works .card {
+    border-color: unset;
 }
-#work img {
+
+#works img {
     max-height: 380px;
 }
 
+/*end Section Works*/
+
+/*Section Skills*/
 #skills .skills-icon {
     width: auto;
     height: 64px;
@@ -100,11 +108,72 @@ h3 {
     text-decoration: none;
 }
 
-@media (max-width: 768px)  {
+/*end Section Skills*/
+
+/*Section Contacts*/
+.contacts-info {
+    max-width: 596px;
+}
+
+.contacts-info__description {
+    font-size: 20px;
+    color: #D1D5DB;
+}
+
+.contacts-info__email a,
+.contacts-info__phone a {
+    font-size: 36px;
+    color: #F9FAFB;
+    text-decoration: none;
+}
+
+.contacts-info__platforms {
+    font-size: 16px;
+    color: #D1D5DB;
+}
+
+.platforms-list {
+    padding: 0;
+}
+
+.platforms-list__item {
+    width: 24px;
+    height: 24px;
+    list-style-type: none;
+}
+
+.platforms-list__link {
+    display: inline-block;
+    width: inherit;
+    height: inherit;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.github {
+    background-image: url("../images/icons/github-icon.svg");
+}
+
+.vk {
+    background-image: url("../images/icons/vk-icon.png");
+}
+
+.telegram {
+    background-image: url("../images/icons/telegram-icon.svg");
+}
+/*end Section Contacts*/
+
+.footer p {
+    font-size: 14px;
+    color: #D1D5DB;
+}
+@media (max-width: 768px) {
     body {
         font-size: 16px;
         line-height: 24px;
     }
+
     /* Заголовки */
     h1 {
         font-size: 48px;
@@ -120,13 +189,14 @@ h3 {
         font-size: 24px;
         line-height: 32px;
     }
-    /* end Заголовки */
 
+    /* end Заголовки */
     section {
-        padding-top: 64px!important;
-        padding-bottom: 64px!important;
+        padding-top: 64px !important;
+        padding-bottom: 64px !important;
     }
-    #work img {
+
+    #works img {
         max-height: 250px;
     }
 }
@@ -138,6 +208,7 @@ h3 {
         line-height: 40px;
         letter-spacing: unset;
     }
+
     /* end Заголовки */
     #hero .img-thumbnail {
         max-width: 240px;
@@ -149,9 +220,12 @@ h3 {
         max-height: 360px;
     }
 
-    #work img {
+    #works img {
         max-height: 192px;
     }
+
+    .contacts-info__email a,
+    .contacts-info__phone a {
+        font-size: 18px;
+    }
 }
-
-
