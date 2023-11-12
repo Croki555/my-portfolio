@@ -163,180 +163,196 @@
         <div class="mb-3 mb-md-5 text-center">
             <button class="btn btn-sm btn-dark">Проекты</button>
         </div>
-        <div class="row m-0">
-            <div class="card mb-3 p-0">
+        <ul class="nav nav-tabs gap-3 justify-content-center border-bottom-0 mb-4" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#frontend" type="button" role="tab" aria-controls="frontend" aria-selected="true">Frontend</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#backend" type="button" role="tab" aria-controls="backend" aria-selected="false">Backend</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="frontend" role="tabpanel" aria-labelledby="frontend-tab">
                 <div class="row m-0">
-                    <div class="col-12 col-md-6 text-start p-3 p-md-5 bg-gray-dark">
-                        <div class="card-body">
-                            <h3 class="card-title text-white">Главная АО «НПП «Сигнал»</h3>
-                            <p class="card-text text-white mb-4">
-                                Была работа в команде, я был в роли верстальщика. Были предоставлены дизайн макеты для
-                                desktop
-                                версий страниц для компании АО «НПП «Сигнал»
-                            </p>
-                            <div class="d-flex flex-wrap gap-2 mb-4">
-                                <button class="btn btn-sm btn-dark">HTML5</button>
-                                <button class="btn btn-sm btn-dark">JavaScript</button>
-                                <button class="btn btn-sm btn-dark">CSS3</button>
+                    <div class="card mb-3 p-0">
+                        <div class="row m-0">
+                            <div class="col-12 col-md-6 text-start p-3 p-md-5 bg-gray-dark">
+                                <div class="card-body">
+                                    <h3 class="card-title text-white">Главная АО «НПП «Сигнал»</h3>
+                                    <p class="card-text text-white mb-4">
+                                        Была работа в команде, я был в роли верстальщика. Были предоставлены дизайн макеты для
+                                        desktop
+                                        версий страниц для компании АО «НПП «Сигнал»
+                                    </p>
+                                    <div class="d-flex flex-wrap gap-2 mb-4">
+                                        <button class="btn btn-sm btn-dark">HTML5</button>
+                                        <button class="btn btn-sm btn-dark">JavaScript</button>
+                                        <button class="btn btn-sm btn-dark">CSS3</button>
+                                    </div>
+                                    <a href="https://croki555.github.io/Signal/">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                             fill="none">
+                                            <path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11"
+                                                  stroke="#4B5563" stroke-width="2" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                            <path d="M15 3H21V9" stroke="#4B5563" stroke-width="2" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                            <path d="M10 14L21 3" stroke="#4B5563" stroke-width="2" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </div>
                             </div>
-                            <a href="https://croki555.github.io/Signal/">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                     fill="none">
-                                    <path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11"
-                                          stroke="#4B5563" stroke-width="2" stroke-linecap="round"
-                                          stroke-linejoin="round"/>
-                                    <path d="M15 3H21V9" stroke="#4B5563" stroke-width="2" stroke-linecap="round"
-                                          stroke-linejoin="round"/>
-                                    <path d="M10 14L21 3" stroke="#4B5563" stroke-width="2" stroke-linecap="round"
-                                          stroke-linejoin="round"/>
-                                </svg>
-                            </a>
+                            <div class="col-12 col-md-6 d-flex justify-content-center align-items-center order-first order-md-last p-3 p-md-5 bg-gray-light">
+                                <img src="./images/works/signal.png" class="img-fluid rounded-3"
+                                     alt="Главная страницы АО «НПП «Сигнал»" loading="lazy">
+                            </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 d-flex justify-content-center align-items-center order-first order-md-last p-3 p-md-5 bg-gray-light">
-                        <img src="./images/works/signal.png" class="img-fluid rounded-3"
-                             alt="Главная страницы АО «НПП «Сигнал»">
+                    <div class="card mb-3 p-0">
+                        <div class="row m-0">
+                            <div class="col-12 col-md-6 d-flex justify-content-center align-items-center p-3 p-md-5 bg-gray-light">
+                                <img src="./images/works/evklid-design-solutions.png" class="img-fluid rounded-3"
+                                     alt="Лендинг «Евклид» проектные решения" loading="lazy">
+                            </div>
+                            <div class="col-12 col-md-6 text-start p-3 p-md-5 bg-gray-dark">
+                                <div class="card-body">
+                                    <h3 class="card-title text-white">Лендинг «Евклид» проектные решения</h3>
+                                    <p class="card-text text-white mb-4">
+                                        Верстка по дизайн макетам, не используя bootstrap, применив знания javascript
+                                    </p>
+                                    <div class="d-flex flex-wrap gap-2 mb-4">
+                                        <button class="btn btn-sm btn-dark">JavaScript</button>
+                                        <button class="btn btn-sm btn-dark">HTML5</button>
+                                        <button class="btn btn-sm btn-dark">CSS3</button>
+                                    </div>
+                                    <a href="https://croki555.github.io/evklid-design-solutions/">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                             fill="none">
+                                            <path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11"
+                                                  stroke="#4B5563" stroke-width="2" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                            <path d="M15 3H21V9" stroke="#4B5563" stroke-width="2" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                            <path d="M10 14L21 3" stroke="#4B5563" stroke-width="2" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 p-0">
+                        <div class="row m-0">
+                            <div class="col-12 col-md-6 text-start p-3 p-md-5 bg-gray-dark">
+                                <div class="card-body">
+                                    <h3 class="card-title text-white">Калькулятор на JS</h3>
+                                    <p class="card-text text-white mb-4">
+                                        Создание калькулятора, применяя знания javascript
+                                    </p>
+                                    <div class="d-flex flex-wrap gap-2 mb-4">
+                                        <button class="btn btn-sm btn-dark">JavaScript</button>
+                                        <button class="btn btn-sm btn-dark">HTML5</button>
+                                        <button class="btn btn-sm btn-dark">CSS3</button>
+                                    </div>
+                                    <a href="https://croki555.github.io/calculator-js/">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                             fill="none">
+                                            <path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11"
+                                                  stroke="#4B5563" stroke-width="2" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                            <path d="M15 3H21V9" stroke="#4B5563" stroke-width="2" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                            <path d="M10 14L21 3" stroke="#4B5563" stroke-width="2" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 d-flex justify-content-center align-items-center order-first order-md-last p-3 p-md-5 bg-gray-light">
+                                <img src="./images/works/calculator-js.png" class="img-fluid rounded-3" alt="Калькулятор на js" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 p-0">
+                        <div class="row m-0">
+                            <div class="col-12 col-md-6 d-flex justify-content-center align-items-center p-3 p-md-5 bg-gray-light">
+                                <img src="./images/works/creative-agency-private-office.png" class="img-fluid rounded-3"
+                                     alt="Личный кабинет" loading="lazy">
+                            </div>
+                            <div class="col-12 col-md-6 text-start p-3 p-md-5 bg-gray-dark">
+                                <div class="card-body">
+                                    <h3 class="card-title text-white">Личный кабинет</h3>
+                                    <p class="card-text text-white mb-4">
+                                        Была идея придумать дизайн и сверстать личный кабинет со списком товаров, применяя
+                                        только Grid сетки
+                                    </p>
+                                    <div class="d-flex flex-wrap gap-2 mb-4">
+                                        <button class="btn btn-sm btn-dark">CSS3</button>
+                                        <button class="btn btn-sm btn-dark">HTML5</button>
+                                    </div>
+                                    <a href="https://croki555.github.io/creative-agency-private-office/">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                             fill="none">
+                                            <path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11"
+                                                  stroke="#4B5563" stroke-width="2" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                            <path d="M15 3H21V9" stroke="#4B5563" stroke-width="2" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                            <path d="M10 14L21 3" stroke="#4B5563" stroke-width="2" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 p-0">
+                        <div class="row m-0">
+                            <div class="col-12 col-md-6 text-start p-3 p-md-5 bg-gray-dark">
+                                <div class="card-body">
+                                    <h3 class="card-title text-white">Покупка билетов на концерты</h3>
+                                    <p class="card-text text-white mb-4">
+                                        Во-первых придумать и создать собственный логотип под название «WhiteTickets», создать и
+                                        сверстать дизайн макеты, применив навыки владения
+                                        Bootstrap фреймворком.
+                                        Во-вторых, создание собственного слайдера на чистом javascript c добавлением анимации.
+                                        Ну и в конце, создать модальное окно для входа в личный кабинет, используя чистый
+                                        javascript
+                                    </p>
+                                    <div class="d-flex flex-wrap gap-2 mb-4">
+                                        <button class="btn btn-sm btn-dark">CSS3</button>
+                                        <button class="btn btn-sm btn-dark">HTML5</button>
+                                        <button class="btn btn-sm btn-dark">JavaScript</button>
+                                        <button class="btn btn-sm btn-dark">Bootstrap 5</button>
+                                    </div>
+                                    <a href="https://croki555.github.io/WhiteTickets/">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                             fill="none">
+                                            <path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11"
+                                                  stroke="#4B5563" stroke-width="2" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                            <path d="M15 3H21V9" stroke="#4B5563" stroke-width="2" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                            <path d="M10 14L21 3" stroke="#4B5563" stroke-width="2" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 d-flex justify-content-center align-items-center order-first order-md-last p-3 p-md-5 bg-gray-light">
+                                <img src="./images/works/white-tickets.png" class="img-fluid rounded-3"
+                                     alt="Покупка билетов на концерты"  loading="lazy">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="card mb-3 p-0">
-                <div class="row m-0">
-                    <div class="col-12 col-md-6 d-flex justify-content-center align-items-center p-3 p-md-5 bg-gray-light">
-                        <img src="./images/works/evklid-design-solutions.png" class="img-fluid rounded-3"
-                             alt="Лендинг «Евклид» проектные решения">
-                    </div>
-                    <div class="col-12 col-md-6 text-start p-3 p-md-5 bg-gray-dark">
-                        <div class="card-body">
-                            <h3 class="card-title text-white">Лендинг «Евклид» проектные решения</h3>
-                            <p class="card-text text-white mb-4">
-                                Верстка по дизайн макетам, не используя bootstrap, применив знания javascript
-                            </p>
-                            <div class="d-flex flex-wrap gap-2 mb-4">
-                                <button class="btn btn-sm btn-dark">JavaScript</button>
-                                <button class="btn btn-sm btn-dark">HTML5</button>
-                                <button class="btn btn-sm btn-dark">CSS3</button>
-                            </div>
-                            <a href="https://croki555.github.io/evklid-design-solutions/">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                     fill="none">
-                                    <path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11"
-                                          stroke="#4B5563" stroke-width="2" stroke-linecap="round"
-                                          stroke-linejoin="round"/>
-                                    <path d="M15 3H21V9" stroke="#4B5563" stroke-width="2" stroke-linecap="round"
-                                          stroke-linejoin="round"/>
-                                    <path d="M10 14L21 3" stroke="#4B5563" stroke-width="2" stroke-linecap="round"
-                                          stroke-linejoin="round"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card mb-3 p-0">
-                <div class="row m-0">
-                    <div class="col-12 col-md-6 text-start p-3 p-md-5 bg-gray-dark">
-                        <div class="card-body">
-                            <h3 class="card-title text-white">Калькулятор на JS</h3>
-                            <p class="card-text text-white mb-4">
-                                Создание калькулятора, применяя знания javascript
-                            </p>
-                            <div class="d-flex flex-wrap gap-2 mb-4">
-                                <button class="btn btn-sm btn-dark">JavaScript</button>
-                                <button class="btn btn-sm btn-dark">HTML5</button>
-                                <button class="btn btn-sm btn-dark">CSS3</button>
-                            </div>
-                            <a href="https://croki555.github.io/calculator-js/">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                     fill="none">
-                                    <path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11"
-                                          stroke="#4B5563" stroke-width="2" stroke-linecap="round"
-                                          stroke-linejoin="round"/>
-                                    <path d="M15 3H21V9" stroke="#4B5563" stroke-width="2" stroke-linecap="round"
-                                          stroke-linejoin="round"/>
-                                    <path d="M10 14L21 3" stroke="#4B5563" stroke-width="2" stroke-linecap="round"
-                                          stroke-linejoin="round"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 d-flex justify-content-center align-items-center order-first order-md-last p-3 p-md-5 bg-gray-light">
-                        <img src="./images/works/calculator-js.png" class="img-fluid rounded-3" alt="Калькулятор на js">
-                    </div>
-                </div>
-            </div>
-            <div class="card mb-3 p-0">
-                <div class="row m-0">
-                    <div class="col-12 col-md-6 d-flex justify-content-center align-items-center p-3 p-md-5 bg-gray-light">
-                        <img src="./images/works/creative-agency-private-office.png" class="img-fluid rounded-3"
-                             alt="Личный кабинет">
-                    </div>
-                    <div class="col-12 col-md-6 text-start p-3 p-md-5 bg-gray-dark">
-                        <div class="card-body">
-                            <h3 class="card-title text-white">Личный кабинет</h3>
-                            <p class="card-text text-white mb-4">
-                                Была идея придумать дизайн и сверстать личный кабинет со списком товаров, применяя
-                                только Grid сетки
-                            </p>
-                            <div class="d-flex flex-wrap gap-2 mb-4">
-                                <button class="btn btn-sm btn-dark">CSS3</button>
-                                <button class="btn btn-sm btn-dark">HTML5</button>
-                            </div>
-                            <a href="https://croki555.github.io/creative-agency-private-office/">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                     fill="none">
-                                    <path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11"
-                                          stroke="#4B5563" stroke-width="2" stroke-linecap="round"
-                                          stroke-linejoin="round"/>
-                                    <path d="M15 3H21V9" stroke="#4B5563" stroke-width="2" stroke-linecap="round"
-                                          stroke-linejoin="round"/>
-                                    <path d="M10 14L21 3" stroke="#4B5563" stroke-width="2" stroke-linecap="round"
-                                          stroke-linejoin="round"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card mb-3 p-0">
-                <div class="row m-0">
-                    <div class="col-12 col-md-6 text-start p-3 p-md-5 bg-gray-dark">
-                        <div class="card-body">
-                            <h3 class="card-title text-white">Покупка билетов на концерты</h3>
-                            <p class="card-text text-white mb-4">
-                                Во-первых придумать и создать собственный логотип под название «WhiteTickets», создать и
-                                сверстать дизайн макеты, применив навыки владения
-                                Bootstrap фреймворком.
-                                Во-вторых, создание собственного слайдера на чистом javascript c добавлением анимации.
-                                Ну и в конце, создать модальное окно для входа в личный кабинет, используя чистый
-                                javascript
-                            </p>
-                            <div class="d-flex flex-wrap gap-2 mb-4">
-                                <button class="btn btn-sm btn-dark">CSS3</button>
-                                <button class="btn btn-sm btn-dark">HTML5</button>
-                                <button class="btn btn-sm btn-dark">JavaScript</button>
-                                <button class="btn btn-sm btn-dark">Bootstrap 5</button>
-                            </div>
-                            <a href="https://croki555.github.io/WhiteTickets/">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                     fill="none">
-                                    <path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11"
-                                          stroke="#4B5563" stroke-width="2" stroke-linecap="round"
-                                          stroke-linejoin="round"/>
-                                    <path d="M15 3H21V9" stroke="#4B5563" stroke-width="2" stroke-linecap="round"
-                                          stroke-linejoin="round"/>
-                                    <path d="M10 14L21 3" stroke="#4B5563" stroke-width="2" stroke-linecap="round"
-                                          stroke-linejoin="round"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 d-flex justify-content-center align-items-center order-first order-md-last p-3 p-md-5 bg-gray-light">
-                        <img src="./images/works/white-tickets.png" class="img-fluid rounded-3"
-                             alt="Покупка билетов на концерты">
-                    </div>
-                </div>
+            <div class="tab-pane fade" id="backend" role="tabpanel" aria-labelledby="backend-tab">
+                <h3 class="text-white text-center">Скоро появится</h3>
             </div>
         </div>
+
     </div>
 </section>
 <section class="bg-dark" id="contacts">
@@ -394,7 +410,7 @@
         </div>
         <div class="row row-cols-1 row-cols-md-2 reviews-list p-0">
             <div class="col p-4 text-center reviews-list__item">
-                <img src="./images/reviews/letter-of-recommendation-from-signal-company.jpg" class="img-fluid h-100" alt="Рекомендательное письмо от компании АО «НПП «Сигнал»">
+                <img src="./images/reviews/letter-of-recommendation-from-signal-company.jpg" class="img-fluid h-100" alt="Рекомендательное письмо от компании АО «НПП «Сигнал»" loading="lazy">
             </div>
         </div>
     </div>

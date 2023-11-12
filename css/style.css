@@ -36,6 +36,15 @@ section {
     background-color: #374151;
 }
 
+.btn.btn-dark {
+    cursor: unset;
+}
+
+.btn.btn-dark:hover {
+    color: #D1D5DB;
+    background-color: #374151;
+}
+
 body {
     font-size: 18px;
     line-height: 28px;
@@ -62,6 +71,11 @@ h3 {
 .btn {
     border-radius: 12px !important;
     padding: 4px 20px !important;
+}
+
+.nav-tabs .nav-link {
+    border-radius: 0.25rem;
+    color: #758392;
 }
 
 /*Section Hero*/
