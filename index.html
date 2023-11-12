@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/6cb8a95bb2.js" crossorigin="anonymous"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
 </head>
 <body>
 <header class="sticky-top">
@@ -41,6 +42,19 @@
         </div>
     </nav>
 </header>
+<script>
+    $(document).ready(function () {
+        let navMain = $(".navbar-collapse");
+        if ($(window).width() <= 767) {
+            $('.toAnchor').on('click', function () {
+                $a = $($(this).attr('href'));
+                $('html,body').animate({scrollTop: $a.offset().top - 300}, 500);
+                navMain.collapse('hide');
+                return false;
+            });
+        }
+    })
+</script>
 <section class="bg-dark" id="hero">
     <div class="container-xxl">
         <div class="row align-items-center">
@@ -389,19 +403,5 @@
     </div>
 </footer>
 <script src="./js/bootstrap.js"></script>
-<script src="./js/jquery-3.7.1.min.js"></script>
-<script>
-    $(document).ready(function () {
-        let navMain = $(".navbar-collapse");
-        if ($(window).width() <= 767) {
-            $('.toAnchor').on('click', function () {
-                $a = $($(this).attr('href'));
-                $('html,body').animate({scrollTop: $a.offset().top - 250}, 500);
-                navMain.collapse('hide');
-                return false;
-            });
-        }
-    })
-</script>
 </body>
 </html>
