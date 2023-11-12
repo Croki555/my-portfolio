@@ -42,7 +42,7 @@ body {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 56px;
     line-height: 72px;
     letter-spacing: 2px;
 }
@@ -165,6 +165,13 @@ h3 {
 }
 
 /*end Section Contacts*/
+
+/*Section Reviews*/
+.reviews-list__item {
+    max-height: 660px;
+    min-height: 350px;
+}
+/*end Section Reviews*/
 
 .footer p {
     font-size: 14px;
