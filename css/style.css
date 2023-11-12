@@ -87,6 +87,7 @@ h3 {
 
 #works img {
     max-height: 380px;
+    height: 100%;
 }
 
 /*end Section Works*/
@@ -162,12 +163,14 @@ h3 {
 .telegram {
     background-image: url("../images/icons/telegram-icon.svg");
 }
+
 /*end Section Contacts*/
 
 .footer p {
     font-size: 14px;
     color: #D1D5DB;
 }
+
 @media (max-width: 768px) {
     body {
         font-size: 16px;
