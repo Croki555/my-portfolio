@@ -96,6 +96,10 @@ h3 {
     max-height: 480px;
 }
 
+.about__description {
+    text-align: justify;
+}
+
 /*end Section About*/
 
 /*Section Works*/
