@@ -707,13 +707,15 @@
 </section>
 <footer class="py-3 bg-dark footer">
     <div class="container-xxl text-center">
-        <p class="m-0">2023 «Личность начинается там, где заканчивается сравнение»</p>
+        <p class="m-0"><span id="currentYear"></span> «Личность начинается там, где заканчивается сравнение»</p>
     </div>
 </footer>
 <script src="./js/bootstrap.js"></script>
 <script src="./js/jquery-3.7.1.min.js"></script>
 <script>
     $(document).ready(function () {
+        const currentYear = new Date().getFullYear();
+        $("#currentYear").text(currentYear);
         $('.show-more').on('click', function () {
             let cards = $('#works .card.d-none');
             let count = 0;
